@@ -1,0 +1,387 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $primary-font;
+}
+
+.h5,
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  font-family: $secondary-font;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.home,
+.accommodations,
+.contact,
+.sign-in {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+
+.sign-in {
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+
+
+.hero-container {
+  background: url('../../assets/hero.jpg')center center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+}
+
+.establishment-container {
+  background: gray;
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+}
+
+.establishment-container>h1 {
+  font-family: $primary-font;
+  color: #fff;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.hero-container>h1 {
+  font-family: $primary-font;
+  color: #fff;
+  font-size: 100px;
+  margin-top: -100px;
+}
+
+.favourite-container {
+  background: gray;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  object-fit: cover;
+}
+
+.favourite-container>h1 {
+  font-family: $primary-font;
+  color: #F26363;
+  font-size: 50px;
+  margin-top: -100px;
+}
+
+
+.hero-container>p {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.hero-btns {
+  margin-top: 32px;
+}
+
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.fa-play-circle {
+  margin-left: 4px;
+}
+
+// Sign in page 
+
+.login-section {
+  height: auto;
+
+  h1 {
+    max-width: 300px;
+  }
+}
+
+
+
+@media screen and (max-width: 960px) {
+  .hero-container>h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container>h1 {
+    font-size: 50px;
+    margin-top: -100px;
+  }
+
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+.cards {
+  padding: 4rem;
+  background: #fff;
+  padding-bottom: 0px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.cards__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards__wrapper {
+  position: relative;
+  width: 100%;
+  margin: 50px 0 45px;
+}
+
+.cards__items {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.cards__item {
+  position: relative;
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+  border-radius: 10px;
+
+  figure {
+    margin: 0;
+  }
+}
+
+.cards__item__link {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  z-index: 2;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 67%;
+  overflow: hidden;
+}
+
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+.cards__item__pic-wrap::before {
+  content: "";
+  z-index: 1;
+  bottom: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+.cards__item__pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  margin-left: 10px;
+  z-index: 2;
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: .25rem;
+  background-color: #F26363;
+  box-sizing: border-box;
+}
+
+.cards__item__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+}
+
+.cards__item__link:hover .cards__item__img {
+  transform: scale(1.1);
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+}
+
+.sign-page-wrapper {
+  background: url('../../assets/hero.jpg')center center/cover no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .footer-container {
+    margin-top: auto;
+  }
+}
+
+.accommodations-search,
+.search-form {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+
+  input {
+    margin-top: 0;
+    margin-right: 5px;
+  }
+
+  .header-search {
+    width: 100px;
+  }
+}
+
+.accommodations-banner {
+  background-color: #e6e7e8;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 20vh;
+
+  h1 {
+    color: black;
+  }
+}
+
+.contact-banner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 20vh;
+
+  h1 {
+    color: #fff;
+  }
+}
+
+.details-banner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+  min-height: 20vh;
+
+  h1 {
+    color: rgb(194, 0, 61);
+    text-transform: capitalize;
+    font-family: Muli, sans-serif;
+    font-weight: 700;
+    font-size: 1.8125rem;
+    line-height: 1.5;
+  }
+}

@@ -1,0 +1,205 @@
+@media screen and (max-width:960px) {
+  .navbar-logo img {
+    margin-top: -140px;
+    margin-left: -80px;
+  }
+
+  .booking-card {
+    min-width: 100%;
+  }
+
+  .admin-container {
+    min-height: 100vh;
+  }
+
+  .admin-card {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 0;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    padding: 0px;
+  }
+
+  .hero-container>p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .hero-container>h1 {
+    font-size: 20px;
+  }
+
+  .favourite-container>h1 {
+    font-size: 20px;
+  }
+
+  .accommodations-banner h1 {
+    font-size: 20px;
+  }
+
+  .cards>h1 {
+    font-size: 20px;
+  }
+
+  .card-wrapper h1 {
+    font-size: 20px;
+  }
+
+  .card-wrapper h3 {
+    font-size: 20px;
+  }
+
+  .card-text p {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .card-icons {
+    font-size: 20px;
+  }
+
+  .contact-section {
+    width: 300px;
+  }
+
+  .details-page-wrapper {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .details-btn-wrapper {
+    display: grid;
+    flex-direction: column;
+    grid-gap: 5%;
+    gap: 5%;
+    width: 100%;
+  }
+
+  .booking {
+    flex-direction: column !important;
+  }
+
+  .carousel-wrapper {
+    width: 100%;
+  }
+
+  .header-featured {
+    font-size: 25px;
+  }
+
+  .card-link+.card-link {
+    margin-left: 0rem;
+    margin-top: 20px;
+  }
+
+  .cards__items {
+    flex-direction: column;
+  }
+
+  .cards__item__pic-wrap::after {
+    font-size: 15px;
+  }
+
+  #header-search {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .admin-card {
+    padding: 50px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .navbar-logo img {
+    margin-top: -140px;
+    margin-left: -80px;
+  }
+
+  .admin-container {
+    padding: 150px;
+    min-height: 100vh;
+  }
+
+  .details-page-wrapper {
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .hero-container>h1 {
+    font-size: 50px;
+  }
+
+  .hero-container>p {
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+
+  .admin-container {
+    padding: 150px;
+    min-height: 100vh;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .details-img {
+    min-height: 580px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+
+  .social-media-wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .hero-container>h1 {
+    font-size: 70px;
+    margin-top: -150px;
+  }
+
+  .admin-container {
+    padding: 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container>h1 {
+    font-size: 30px;
+    margin-top: -100px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .details-btn {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

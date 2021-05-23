@@ -1,0 +1,34 @@
+.items__title {
+  Font-Family: 'Unica One', Cursive;
+  Font-Size: 52px;
+  color: black;
+  font-weight: 800;
+  font-size: clamp(17px, 2vw, 20px);
+  text-transform: uppercase;
+}
+
+.item__title a {
+  text-align: center;
+  Font-Family: 'Unica One', Cursive;
+  color: black;
+  font-weight: 800;
+  font-size: clamp(17px, 2vw, 20px);
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-family: $primary-font;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.feautured-links a {
+  text-decoration: none;
+}
+
+
+.header-featured {
+  margin-bottom: 60px;
+}
+

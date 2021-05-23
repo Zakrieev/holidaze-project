@@ -1,0 +1,49 @@
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+        margin: 20px 15px;
+        position: relative;
+        border-radius: .50rem;
+        background-color: #e6e7e8;
+        border: none;
+        width: 100%;
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            border-top: .25rem;
+        }
+
+        .card-subtitle {
+            font-family: $secondary-font;
+            position: absolute;
+            background-color: #F26363;
+            color: white;
+            padding: 5px 20px;
+            line-height: 20px;
+            font-weight: 600;
+            font-size: 18px;
+            top: 0;
+            right: 0;
+            margin-top: 0px;
+            border-radius: .25rem;
+        }
+    }
+}
+
+.card-title {
+    font-family: $primary-font;
+}
+
+.card-text p {
+    font-family: $secondary-font;
+}
+
+.booking-card {
+    width: 50%;
+    min-width: 350px;
+    max-width: 100%;
+}

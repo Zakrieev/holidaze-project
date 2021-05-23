@@ -1,0 +1,111 @@
+ .admin-container {
+   background: url('../../assets/hero.jpg')center center/cover no-repeat;
+   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+ }
+
+ .admin-card {
+   color: white;
+   text-align: center;
+   border-radius: 5px;
+
+   &__header {
+     color: #F26363;
+     font-size: auto;
+   }
+
+   &__sub-header {
+     text-transform: none;
+   }
+
+   &__date {
+     text-align: right;
+     font-size: 0.9em;
+     font-style: italic;
+   }
+
+   &__image {
+     max-width: 300px;
+     margin: auto;
+   }
+
+   &__content-list {
+     text-align: left;
+
+     ul {
+       list-style: none;
+       padding: 0px;
+     }
+   }
+
+
+
+   &__content-list-item {
+     box-shadow: (7px 7px 30px 0px rgba(rgb(0, 0, 0), 1));
+     font-size: 1.3em;
+     background-color: gray;
+     margin: 30px 0px;
+     padding: 10px;
+     border-radius: 5px;
+     text-align: center;
+
+     a {
+       color: white;
+       text-decoration: none;
+     }
+
+     &:hover {
+       box-shadow: none;
+       background: #F26363;
+     }
+   }
+ }
+
+ .card-text p {
+   font-size: 20px;
+ }
+
+ .admin-content {
+   background-color: #e6e7e8;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-top: 10px;
+ }
+
+ .admin-heading {
+   font-size: 20px;
+
+ }
+
+ /***************
+   * Media Quiries*
+   ***************/
+ @media screen and (min-width: 577px) {}
+
+ @media screen and (max-width: 767px) {}
+
+ @media screen and (max-width: 577px) {
+   .admin-card {
+     &__header {
+       font-size: 1.3em;
+     }
+
+     &__sub-header {
+       font-size: 1em;
+     }
+
+     &__content-list-item {
+       font-size: 1em;
+     }
+
+     &__card {
+       margin: 40px 0px;
+     }
+
+     &__card-header {
+       font-size: 1em;
+       text-align: center;
+       margin-top: 20px;
+     }
+   }
+ }

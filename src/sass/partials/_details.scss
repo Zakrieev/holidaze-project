@@ -1,0 +1,100 @@
+.details-page-wrapper {
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    padding: 10vh;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.carousel-wrapper {
+    display: flex;
+
+    flex-direction: column;
+
+    & img {
+        margin: auto;
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: .25rem;
+
+    }
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.card-wrapper h1 {
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.card-wrapper h3 {
+    text-align: center;
+    color: #F26363;
+}
+
+.details-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.details-wrapper p {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+#price {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#details-card {
+    border: none;
+}
+
+.details-btn {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s;
+    font-family: Muli, sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    padding: 0.5rem 20px;
+    color: white;
+    background-color: #F26363;
+    border-color: #F26363;
+    text-decoration: none;
+}
+
+.details-btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .details-img {
+        min-height: 580px;
+    }
+}
